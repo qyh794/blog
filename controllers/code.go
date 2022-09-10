@@ -33,3 +33,4 @@ func (res ResCode) Msg() string {
 	}
 	return msg
 }
+
