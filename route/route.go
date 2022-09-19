@@ -9,7 +9,7 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-func Setup(mode string) *gin.Engine{
+func Setup(mode string) *gin.Engine {
 	r := gin.New()
 	r.Use(logger.GinLogger(), logger.GinRecovery(true))
 	v1 := r.Group("api/blog")
@@ -35,10 +35,14 @@ func Setup(mode string) *gin.Engine{
 		v1.GET("postlistbytimeorscore/:order", controllers.GetPostListByTimeOrScore)
 		// 给帖子投票
 		v1.POST("/vote", controllers.PostVoteControllers)
+		// 创建评论
+		v1.POST("/comment", controllers.CreateCommentHandler)
+		// 获取帖子评论
+		v1.GET("/comment/:id", controllers.GetCommentListHandler)
 	}
 	r.NoRoute(func(ctx *gin.Context) {
 		ctx.JSON(http.StatusOK, gin.H{
-			"msg" : "404",
+			"msg": "404",
 		})
 	})
 	return r
