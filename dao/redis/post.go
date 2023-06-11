@@ -2,6 +2,7 @@ package redis
 
 import (
 	"blog/models"
+	"encoding/json"
 	"github.com/go-redis/redis"
 )
 
@@ -37,6 +38,32 @@ func GetPostVoteData(ids []string) (data []int64, err error) {
 	return
 }
 
-func UpdateCache(data []*models.PostDetail) error {
+func GetPostInOrderFromCache() (data []string, err error) {
+	key := getRedisKey(KeyPostCacheZset)
+	result, err := client.ZRange(key, 0, -1).Result()
+	if err != nil {
+		return nil, err
+	}
+	return result, nil
+}
 
+func AddPostCache(data []*models.PostDetail) error {
+	key := getRedisKey(KeyPostCacheZset)
+	postCache := make([]redis.Z, len(data))
+	for i, post := range data {
+		score := float64(post.VoteNum)
+		member, err := json.Marshal(post)
+		if err != nil {
+			return err
+		}
+		postCache[i] = redis.Z{
+			Score:  score,
+			Member: member,
+		}
+	}
+	_, err := client.ZAdd(key, postCache...).Result()
+	if err != nil {
+		return err
+	}
+	return nil
 }
