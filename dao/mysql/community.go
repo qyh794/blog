@@ -7,13 +7,11 @@ import (
 	"go.uber.org/zap"
 )
 
-
-
 func CommunityList() (communityList []*models.Community, err error) {
-	
+
 	sqlStr := "select community_id, community_name from community"
 	// 查询多行用select
-	if err := db.Select(&communityList,sqlStr); err != nil {
+	if err := db.Select(&communityList, sqlStr); err != nil {
 		if err == sql.ErrNoRows {
 			zap.L().Warn("no date")
 			err = nil
@@ -23,7 +21,7 @@ func CommunityList() (communityList []*models.Community, err error) {
 }
 
 func GetCommunityDetailByID(id int64) (data models.CommunityDetail, err error) {
-	
+
 	sqlStr := "select community_id, community_name, introduction, create_time from community where community_id = ?"
 	if err = db.Get(&data, sqlStr, id); err != nil {
 		zap.L().Error("db.select failed err:", zap.Error(err))
