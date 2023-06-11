@@ -1,6 +1,7 @@
 package logic
 
 import (
+	"blog/cache"
 	"blog/dao/mysql"
 	"blog/dao/redis"
 	"blog/models"
@@ -96,6 +97,69 @@ func GetPostListByCommunity(communityId int) (data []*models.PostDetail, err err
 			CommunityDetail: &community,
 		}
 		data = append(data, postDetailOne)
+	}
+	return
+}
+
+// 根据时间或者分数获取帖子
+func GetPostListByTimeOrScore(p *models.ParamPostList) (data []*models.PostDetail, err error) {
+	// 查询缓存
+	cacheData, err := cache.GetPostListFromCache()
+	// 缓存命中
+	if len(cacheData) > 0 {
+		zap.L().Info("缓存命中")
+		return cacheData, nil
+	}
+	zap.L().Info("缓存未命中")
+
+	// 根据帖子的分数或者时间在redis中获取帖子的id
+	ids, err := redis.GetPostIDsInOrder(p)
+	if err != nil {
+		return
+	}
+	// 得到帖子的id后，从MySQL中获取帖子详细信息
+	posts, err := mysql.GetPostListByIDs(ids)
+	if err != nil {
+		return
+	}
+	// 查询出帖子的投票情况
+	voteData, err := redis.GetPostVoteData(ids)
+	if err != nil {
+		return
+	}
+	// 将帖子信息进行组合后返回
+	for i, post := range posts {
+		// 获取作者信息
+		user, err := mysql.GetUserByID(post.AuthorID)
+		if err != nil {
+			zap.L().Error("mysql.GetUserById(post.AuthorID) failed",
+				zap.Int64("author_id", post.AuthorID),
+				zap.Error(err))
+			continue
+		}
+		// 根据社区id查询社区详细信息
+		communityDetail, err := mysql.GetCommunityDetailByID(post.CommunityID)
+		if err != nil {
+			zap.L().Error("mysql.GetCommunityDetailByID(post.CommunityID) failed",
+				zap.Int64("CommunityID", post.CommunityID),
+				zap.Error(err))
+			continue
+		}
+		postDetail := &models.PostDetail{
+			AuthorName:      user.Username,
+			VoteNum:         voteData[i],
+			Post:            post,
+			CommunityDetail: &communityDetail,
+		}
+		data = append(data, postDetail)
+	}
+	// 添加缓存
+	err = redis.AddPostCache(data)
+	if err == nil {
+		zap.L().Info("添加缓存成功")
+	} else {
+		zap.L().Error("redis.AddPostCache failed",
+			zap.Error(err))
 	}
 	return
 }
