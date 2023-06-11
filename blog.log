@@ -1,0 +1,439 @@
+{"level":"ERROR","time":"2022-03-19T21:37:07.823+0800","caller":"mysql/mysql.go:22","msg":"sql connect failed, err:","error":"sql: unknown driver \"mysql\" (forgotten import?)"}
+{"level":"ERROR","time":"2022-03-20T13:37:03.095+0800","caller":"controllers/user.go:15","msg":"signup with invaild param","error":"Key: 'ParamSignUp.RePassword' Error:Field validation for 'RePassword' failed on the 'required' tag"}
+{"level":"INFO","time":"2022-03-20T13:37:03.096+0800","caller":"logger/logger.go:74","msg":"/api/blog/signup","status":200,"method":"POST","path":"/api/blog/signup","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0020972}
+{"level":"INFO","time":"2022-03-20T13:38:09.898+0800","caller":"logger/logger.go:74","msg":"/api/blog/signup","status":200,"method":"POST","path":"/api/blog/signup","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0152822}
+{"level":"INFO","time":"2022-03-20T13:40:40.891+0800","caller":"blog/main.go:72","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-20T13:40:40.893+0800","caller":"blog/main.go:81","msg":"Server exiting"}
+{"level":"ERROR","time":"2022-03-20T13:40:52.095+0800","caller":"controllers/user.go:27","msg":"logic.SignUp(p) failed","error":"Error 1064: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '??)' at line 1"}
+{"level":"INFO","time":"2022-03-20T13:40:52.096+0800","caller":"logger/logger.go:74","msg":"/api/blog/signup","status":200,"method":"POST","path":"/api/blog/signup","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.005007}
+{"level":"ERROR","time":"2022-03-20T13:40:58.122+0800","caller":"controllers/user.go:27","msg":"logic.SignUp(p) failed","error":"Error 1064: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '??)' at line 1"}
+{"level":"INFO","time":"2022-03-20T13:40:58.123+0800","caller":"logger/logger.go:74","msg":"/api/blog/signup","status":200,"method":"POST","path":"/api/blog/signup","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0018829}
+{"level":"INFO","time":"2022-03-20T13:41:28.548+0800","caller":"blog/main.go:72","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-20T13:41:28.549+0800","caller":"blog/main.go:81","msg":"Server exiting"}
+{"level":"INFO","time":"2022-03-20T13:41:36.880+0800","caller":"logger/logger.go:74","msg":"/api/blog/signup","status":200,"method":"POST","path":"/api/blog/signup","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0086148}
+{"level":"ERROR","time":"2022-03-20T13:42:03.444+0800","caller":"controllers/user.go:27","msg":"logic.SignUp(p) failed","error":"用户已存在"}
+{"level":"INFO","time":"2022-03-20T13:42:03.444+0800","caller":"logger/logger.go:74","msg":"/api/blog/signup","status":200,"method":"POST","path":"/api/blog/signup","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0010154}
+{"level":"INFO","time":"2022-03-21T11:09:16.953+0800","caller":"blog/main.go:72","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-21T11:09:16.956+0800","caller":"blog/main.go:81","msg":"Server exiting"}
+{"level":"INFO","time":"2022-03-21T11:22:02.556+0800","caller":"logger/logger.go:74","msg":"/api/blog/login","status":404,"method":"GET","path":"/api/blog/login","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0}
+{"level":"ERROR","time":"2022-03-21T11:22:12.756+0800","caller":"controllers/user.go:50","msg":"logic.Login(p) failed, err:","error":"must pass a pointer, not a value, to StructScan destination"}
+{"level":"INFO","time":"2022-03-21T11:22:12.756+0800","caller":"logger/logger.go:74","msg":"/api/blog/login","status":200,"method":"POST","path":"/api/blog/login","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0089354}
+{"level":"INFO","time":"2022-03-21T11:29:04.375+0800","caller":"blog/main.go:72","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-21T11:29:04.376+0800","caller":"blog/main.go:81","msg":"Server exiting"}
+{"level":"ERROR","time":"2022-03-21T11:29:10.243+0800","caller":"controllers/user.go:76","msg":"logic.Login failed","username":"123","error":"must pass a pointer, not a value, to StructScan destination"}
+{"level":"INFO","time":"2022-03-21T11:29:10.244+0800","caller":"logger/logger.go:74","msg":"/api/blog/login","status":200,"method":"POST","path":"/api/blog/login","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0039297}
+{"level":"INFO","time":"2022-03-21T11:30:21.624+0800","caller":"blog/main.go:72","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-21T11:30:21.624+0800","caller":"blog/main.go:81","msg":"Server exiting"}
+{"level":"ERROR","time":"2022-03-21T11:30:28.301+0800","caller":"controllers/user.go:50","msg":"logic.Login(p) failed, err:","error":"must pass a pointer, not a value, to StructScan destination"}
+{"level":"INFO","time":"2022-03-21T11:30:28.303+0800","caller":"logger/logger.go:74","msg":"/api/blog/login","status":200,"method":"POST","path":"/api/blog/login","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0041676}
+{"level":"INFO","time":"2022-03-21T11:31:51.968+0800","caller":"blog/main.go:72","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-21T11:31:51.969+0800","caller":"blog/main.go:81","msg":"Server exiting"}
+{"level":"ERROR","time":"2022-03-21T11:32:01.280+0800","caller":"controllers/user.go:50","msg":"logic.Login(p) failed, err:","error":"nil pointer passed to StructScan destination"}
+{"level":"INFO","time":"2022-03-21T11:32:01.281+0800","caller":"logger/logger.go:74","msg":"/api/blog/login","status":200,"method":"POST","path":"/api/blog/login","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0035241}
+{"level":"INFO","time":"2022-03-21T11:32:43.168+0800","caller":"blog/main.go:72","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-21T11:32:43.170+0800","caller":"blog/main.go:81","msg":"Server exiting"}
+{"level":"ERROR","time":"2022-03-21T11:32:50.371+0800","caller":"mysql/user.go:42","msg":"111","error":"nil pointer passed to StructScan destination"}
+{"level":"ERROR","time":"2022-03-21T11:32:50.372+0800","caller":"controllers/user.go:50","msg":"logic.Login(p) failed, err:","error":"nil pointer passed to StructScan destination"}
+{"level":"INFO","time":"2022-03-21T11:32:50.373+0800","caller":"logger/logger.go:74","msg":"/api/blog/login","status":200,"method":"POST","path":"/api/blog/login","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0045986}
+{"level":"INFO","time":"2022-03-21T11:33:14.142+0800","caller":"blog/main.go:72","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-21T11:33:14.143+0800","caller":"blog/main.go:81","msg":"Server exiting"}
+{"level":"ERROR","time":"2022-03-21T11:33:21.457+0800","caller":"mysql/user.go:42","msg":"111","error":"scannable dest type ptr with >1 columns (3) in result"}
+{"level":"ERROR","time":"2022-03-21T11:33:21.459+0800","caller":"controllers/user.go:50","msg":"logic.Login(p) failed, err:","error":"scannable dest type ptr with >1 columns (3) in result"}
+{"level":"INFO","time":"2022-03-21T11:33:21.459+0800","caller":"logger/logger.go:74","msg":"/api/blog/login","status":200,"method":"POST","path":"/api/blog/login","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0046482}
+{"level":"INFO","time":"2022-03-21T11:35:21.375+0800","caller":"blog/main.go:72","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-21T11:35:21.376+0800","caller":"blog/main.go:81","msg":"Server exiting"}
+{"level":"INFO","time":"2022-03-21T11:35:27.309+0800","caller":"logger/logger.go:74","msg":"/api/blog/login","status":200,"method":"POST","path":"/api/blog/login","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0033493}
+{"level":"INFO","time":"2022-03-21T11:37:05.631+0800","caller":"blog/main.go:72","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-21T11:37:05.632+0800","caller":"blog/main.go:81","msg":"Server exiting"}
+{"level":"INFO","time":"2022-03-21T11:37:10.409+0800","caller":"logger/logger.go:74","msg":"/api/blog/login","status":200,"method":"POST","path":"/api/blog/login","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0029637}
+{"level":"INFO","time":"2022-03-21T11:49:05.583+0800","caller":"blog/main.go:72","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-21T11:49:05.584+0800","caller":"blog/main.go:81","msg":"Server exiting"}
+{"level":"INFO","time":"2022-03-21T12:59:04.200+0800","caller":"logger/logger.go:74","msg":"/api/blog/community","status":404,"method":"POST","path":"/api/blog/community","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0}
+{"level":"INFO","time":"2022-03-21T12:59:07.587+0800","caller":"logger/logger.go:74","msg":"/api/blog/community","status":404,"method":"GET","path":"/api/blog/community","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0}
+{"level":"INFO","time":"2022-03-21T12:59:13.571+0800","caller":"logger/logger.go:74","msg":"/api/blog/community","status":404,"method":"GET","path":"/api/blog/community","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0}
+{"level":"INFO","time":"2022-03-21T12:59:44.073+0800","caller":"logger/logger.go:74","msg":"/api/blog/community","status":404,"method":"GET","path":"/api/blog/community","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0}
+{"level":"INFO","time":"2022-03-21T12:59:51.066+0800","caller":"blog/main.go:72","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-21T12:59:51.067+0800","caller":"blog/main.go:81","msg":"Server exiting"}
+{"level":"INFO","time":"2022-03-21T13:00:52.735+0800","caller":"logger/logger.go:74","msg":"/api/blog/community","status":404,"method":"GET","path":"/api/blog/community","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0}
+{"level":"INFO","time":"2022-03-21T13:04:19.074+0800","caller":"blog/main.go:72","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-21T13:04:19.075+0800","caller":"blog/main.go:81","msg":"Server exiting"}
+{"level":"INFO","time":"2022-03-21T13:04:27.441+0800","caller":"logger/logger.go:74","msg":"/api/blog/community","status":200,"method":"GET","path":"/api/blog/community","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0}
+{"level":"INFO","time":"2022-03-21T13:04:36.798+0800","caller":"logger/logger.go:74","msg":"/api/blog/Community","status":200,"method":"GET","path":"/api/blog/Community","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.001}
+{"level":"INFO","time":"2022-03-21T13:05:02.697+0800","caller":"logger/logger.go:74","msg":"/api/blog/login","status":200,"method":"GET","path":"/api/blog/login","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0}
+{"level":"INFO","time":"2022-03-21T13:05:25.143+0800","caller":"logger/logger.go:74","msg":"/api/blog/login","status":200,"method":"POST","path":"/api/blog/login","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0041803}
+{"level":"INFO","time":"2022-03-21T13:05:35.158+0800","caller":"logger/logger.go:74","msg":"/api/blog/Community","status":200,"method":"GET","path":"/api/blog/Community","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0}
+{"level":"INFO","time":"2022-03-21T13:08:46.203+0800","caller":"blog/main.go:72","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-21T13:08:46.204+0800","caller":"blog/main.go:81","msg":"Server exiting"}
+{"level":"INFO","time":"2022-03-21T13:08:52.339+0800","caller":"logger/logger.go:74","msg":"/api/blog/Community","status":200,"method":"GET","path":"/api/blog/Community","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0005192}
+{"level":"INFO","time":"2022-03-21T13:09:00.779+0800","caller":"logger/logger.go:74","msg":"/api/blog/community","status":200,"method":"GET","path":"/api/blog/community","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0}
+{"level":"INFO","time":"2022-03-21T13:09:04.943+0800","caller":"logger/logger.go:74","msg":"/api/blog/login","status":200,"method":"POST","path":"/api/blog/login","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0013261}
+{"level":"INFO","time":"2022-03-21T13:09:24.440+0800","caller":"logger/logger.go:74","msg":"/api/blog/community","status":200,"method":"GET","path":"/api/blog/community","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0017271}
+{"level":"INFO","time":"2022-03-21T13:12:24.044+0800","caller":"logger/logger.go:74","msg":"/api/blog/community","status":200,"method":"GET","path":"/api/blog/community","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0011484}
+{"level":"INFO","time":"2022-03-21T13:12:26.418+0800","caller":"blog/main.go:72","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-21T13:12:26.419+0800","caller":"blog/main.go:81","msg":"Server exiting"}
+{"level":"INFO","time":"2022-03-21T13:12:32.970+0800","caller":"logger/logger.go:74","msg":"/api/blog/community","status":200,"method":"GET","path":"/api/blog/community","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0025076}
+{"level":"INFO","time":"2022-03-21T13:15:31.515+0800","caller":"blog/main.go:72","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-21T13:15:31.516+0800","caller":"blog/main.go:81","msg":"Server exiting"}
+{"level":"INFO","time":"2022-03-21T13:19:15.147+0800","caller":"blog/main.go:72","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-21T13:19:15.148+0800","caller":"blog/main.go:81","msg":"Server exiting"}
+{"level":"INFO","time":"2022-03-21T13:19:20.346+0800","caller":"logger/logger.go:74","msg":"/api/blog/community","status":200,"method":"GET","path":"/api/blog/community","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0020313}
+{"level":"INFO","time":"2022-03-21T13:21:40.060+0800","caller":"logger/logger.go:74","msg":"/api/blog/community","status":200,"method":"GET","path":"/api/blog/community","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0006705}
+{"level":"INFO","time":"2022-03-21T13:24:51.163+0800","caller":"blog/main.go:72","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-21T13:24:51.164+0800","caller":"blog/main.go:81","msg":"Server exiting"}
+{"level":"INFO","time":"2022-03-21T13:24:58.308+0800","caller":"logger/logger.go:74","msg":"/api/blog/community","status":200,"method":"GET","path":"/api/blog/community","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0020558}
+{"level":"INFO","time":"2022-03-21T15:09:12.944+0800","caller":"blog/main.go:72","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-21T15:09:12.944+0800","caller":"blog/main.go:81","msg":"Server exiting"}
+{"level":"INFO","time":"2022-03-21T15:09:54.663+0800","caller":"logger/logger.go:74","msg":"/api/blog/community/1","status":200,"method":"GET","path":"/api/blog/community/1","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0}
+{"level":"INFO","time":"2022-03-21T15:10:12.615+0800","caller":"logger/logger.go:74","msg":"/api/blog/login","status":200,"method":"POST","path":"/api/blog/login","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0041066}
+{"level":"ERROR","time":"2022-03-21T15:10:25.321+0800","caller":"controllers/community.go:32","msg":"logic.GetCommunityDetailByID() failed, err:","error":"nil pointer passed to StructScan destination"}
+{"level":"INFO","time":"2022-03-21T15:10:25.321+0800","caller":"logger/logger.go:74","msg":"/api/blog/community/1","status":200,"method":"GET","path":"/api/blog/community/1","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0033945}
+{"level":"INFO","time":"2022-03-21T15:10:55.318+0800","caller":"blog/main.go:72","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-21T15:10:55.318+0800","caller":"blog/main.go:81","msg":"Server exiting"}
+{"level":"ERROR","time":"2022-03-21T15:11:01.124+0800","caller":"controllers/community.go:32","msg":"logic.GetCommunityDetailByID() failed, err:","error":"scannable dest type ptr with >1 columns (4) in result"}
+{"level":"INFO","time":"2022-03-21T15:11:01.125+0800","caller":"logger/logger.go:74","msg":"/api/blog/community/1","status":200,"method":"GET","path":"/api/blog/community/1","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0038391}
+{"level":"INFO","time":"2022-03-21T15:13:26.266+0800","caller":"blog/main.go:72","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-21T15:13:26.271+0800","caller":"blog/main.go:81","msg":"Server exiting"}
+{"level":"INFO","time":"2022-03-21T15:13:33.771+0800","caller":"logger/logger.go:74","msg":"/api/blog/community/1","status":200,"method":"GET","path":"/api/blog/community/1","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0010449}
+{"level":"INFO","time":"2022-03-21T15:14:04.247+0800","caller":"blog/main.go:72","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-21T15:14:04.247+0800","caller":"blog/main.go:81","msg":"Server exiting"}
+{"level":"ERROR","time":"2022-03-21T15:14:10.503+0800","caller":"logger/logger.go:116","msg":"[Recovery from panic]","error":"runtime error: invalid memory address or nil pointer dereference","request":"GET /api/blog/community/1 HTTP/1.1\r\nHost: localhost:8082\r\nAccept: */*\r\nAccept-Encoding: gzip, deflate, br\r\nAuthorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo0NDgzNTc5ODYyMTM4ODgsInVzZXJuYW1lIjoiMTIzIiwiZXhwIjoxNjc5MzgyNjEyLCJpc3MiOiJibG9nIn0.pAegomZctORNcBbBAPs6RfTJMpH1qHSASIR1BrrsHNw\r\nCache-Control: no-cache\r\nConnection: keep-alive\r\nContent-Length: 51\r\nContent-Type: application/json\r\nPostman-Token: 9cc7dcbc-0105-4dbc-a097-14e4abed83be\r\nUser-Agent: PostmanRuntime/7.29.0\r\n\r\n","stack":"goroutine 66 [running]:\nruntime/debug.Stack()\n\tE:/GO1.17/src/runtime/debug/stack.go:24 +0x65\nblog/logger.GinRecovery.func1.1()\n\tE:/GoProject/src/GoCode/blog/logger/logger.go:119 +0x2e6\npanic({0xe77500, 0x146bef0})\n\tE:/GO1.17/src/runtime/panic.go:1038 +0x215\nblog/dao/mysql.GetCommunityDetailByID(0xc000018528)\n\tE:/GoProject/src/GoCode/blog/dao/mysql/community.go:28 +0x2d\nblog/logic.GetCommunityDetailByID(...)\n\tE:/GoProject/src/GoCode/blog/logic/community.go:13\nblog/controllers.CommunityDetailHandler(0xc000072000)\n\tE:/GoProject/src/GoCode/blog/controllers/community.go:30 +0x65\ngithub.com/gin-gonic/gin.(*Context).Next(...)\n\tE:/GoProject/pkg/mod/github.com/gin-gonic/gin@v1.7.7/context.go:168\nblog/middlewares.JWTAuthMiddleware.func1(0xc000072000)\n\tE:/GoProject/src/GoCode/blog/middlewares/auth.go:46 +0x3f7\ngithub.com/gin-gonic/gin.(*Context).Next(...)\n\tE:/GoProject/pkg/mod/github.com/gin-gonic/gin@v1.7.7/context.go:168\nblog/logger.GinRecovery.func1(0xc000072000)\n\tE:/GoProject/src/GoCode/blog/logger/logger.go:130 +0x76\ngithub.com/gin-gonic/gin.(*Context).Next(...)\n\tE:/GoProject/pkg/mod/github.com/gin-gonic/gin@v1.7.7/context.go:168\nblog/logger.GinLogger.func1(0xc000072000)\n\tE:/GoProject/src/GoCode/blog/logger/logger.go:71 +0x97\ngithub.com/gin-gonic/gin.(*Context).Next(...)\n\tE:/GoProject/pkg/mod/github.com/gin-gonic/gin@v1.7.7/context.go:168\ngithub.com/gin-gonic/gin.(*Engine).handleHTTPRequest(0xc000084680, 0xc000072000)\n\tE:/GoProject/pkg/mod/github.com/gin-gonic/gin@v1.7.7/gin.go:555 +0x671\ngithub.com/gin-gonic/gin.(*Engine).ServeHTTP(0xc000084680, {0x1010d70, 0xc0001502a0}, 0xc000512100)\n\tE:/GoProject/pkg/mod/github.com/gin-gonic/gin@v1.7.7/gin.go:511 +0x1d2\nnet/http.serverHandler.ServeHTTP({0x100f848}, {0x1010d70, 0xc0001502a0}, 0xc000512100)\n\tE:/GO1.17/src/net/http/server.go:2879 +0x43b\nnet/http.(*conn).serve(0xc000416280, {0x1015c40, 0xc0003ea300})\n\tE:/GO1.17/src/net/http/server.go:1930 +0xb08\ncreated by net/http.(*Server).Serve\n\tE:/GO1.17/src/net/http/server.go:3034 +0x4e8\n"}
+{"level":"INFO","time":"2022-03-21T15:14:10.507+0800","caller":"logger/logger.go:74","msg":"/api/blog/community/1","status":500,"method":"GET","path":"/api/blog/community/1","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0036508}
+{"level":"INFO","time":"2022-03-21T15:14:18.287+0800","caller":"blog/main.go:72","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-21T15:14:18.288+0800","caller":"blog/main.go:81","msg":"Server exiting"}
+{"level":"ERROR","time":"2022-03-21T15:14:29.634+0800","caller":"controllers/community.go:32","msg":"logic.GetCommunityDetailByID() failed, err:","error":"scannable dest type ptr with >1 columns (4) in result"}
+{"level":"INFO","time":"2022-03-21T15:14:29.635+0800","caller":"logger/logger.go:74","msg":"/api/blog/community/1","status":200,"method":"GET","path":"/api/blog/community/1","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.002678}
+{"level":"INFO","time":"2022-03-21T15:32:18.864+0800","caller":"blog/main.go:72","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-21T15:32:18.864+0800","caller":"blog/main.go:81","msg":"Server exiting"}
+{"level":"INFO","time":"2022-03-21T15:32:32.436+0800","caller":"logger/logger.go:74","msg":"/api/blog/community","status":200,"method":"GET","path":"/api/blog/community","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0030257}
+{"level":"ERROR","time":"2022-03-21T15:32:40.340+0800","caller":"controllers/community.go:32","msg":"logic.GetCommunityDetailByID() failed, err:","error":"nil pointer passed to StructScan destination"}
+{"level":"INFO","time":"2022-03-21T15:32:40.341+0800","caller":"logger/logger.go:74","msg":"/api/blog/community/1","status":200,"method":"GET","path":"/api/blog/community/1","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0012614}
+{"level":"INFO","time":"2022-03-21T15:32:49.991+0800","caller":"blog/main.go:72","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-21T15:32:49.992+0800","caller":"blog/main.go:81","msg":"Server exiting"}
+{"level":"ERROR","time":"2022-03-21T15:32:55.524+0800","caller":"controllers/community.go:32","msg":"logic.GetCommunityDetailByID() failed, err:","error":"scannable dest type ptr with >1 columns (4) in result"}
+{"level":"INFO","time":"2022-03-21T15:32:55.525+0800","caller":"logger/logger.go:74","msg":"/api/blog/community/1","status":200,"method":"GET","path":"/api/blog/community/1","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0038094}
+{"level":"INFO","time":"2022-03-21T15:36:13.912+0800","caller":"blog/main.go:72","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-21T15:36:13.912+0800","caller":"blog/main.go:81","msg":"Server exiting"}
+{"level":"ERROR","time":"2022-03-21T15:36:18.669+0800","caller":"controllers/community.go:32","msg":"logic.GetCommunityDetailByID() failed, err:","error":"scannable dest type ptr with >1 columns (4) in result"}
+{"level":"INFO","time":"2022-03-21T15:36:18.670+0800","caller":"logger/logger.go:74","msg":"/api/blog/community/1","status":200,"method":"GET","path":"/api/blog/community/1","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0022788}
+{"level":"INFO","time":"2022-03-21T15:37:51.160+0800","caller":"blog/main.go:72","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-21T15:37:51.160+0800","caller":"blog/main.go:81","msg":"Server exiting"}
+{"level":"ERROR","time":"2022-03-21T15:37:57.334+0800","caller":"controllers/community.go:32","msg":"logic.GetCommunityDetailByID() failed, err:","error":"expected slice but got ptr"}
+{"level":"INFO","time":"2022-03-21T15:37:57.335+0800","caller":"logger/logger.go:74","msg":"/api/blog/community/1","status":200,"method":"GET","path":"/api/blog/community/1","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.001709}
+{"level":"INFO","time":"2022-03-21T15:39:07.840+0800","caller":"blog/main.go:72","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-21T15:39:07.840+0800","caller":"blog/main.go:81","msg":"Server exiting"}
+{"level":"ERROR","time":"2022-03-21T15:39:13.134+0800","caller":"mysql/community.go:30","msg":"db.select failed err:","error":"expected slice but got ptr"}
+{"level":"ERROR","time":"2022-03-21T15:39:13.135+0800","caller":"controllers/community.go:32","msg":"logic.GetCommunityDetailByID() failed, err:","error":"expected slice but got ptr"}
+{"level":"INFO","time":"2022-03-21T15:39:13.136+0800","caller":"logger/logger.go:74","msg":"/api/blog/community/1","status":200,"method":"GET","path":"/api/blog/community/1","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0025978}
+{"level":"INFO","time":"2022-03-21T15:39:24.891+0800","caller":"blog/main.go:72","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-21T15:39:24.894+0800","caller":"blog/main.go:81","msg":"Server exiting"}
+{"level":"ERROR","time":"2022-03-21T15:39:29.012+0800","caller":"mysql/community.go:30","msg":"db.select failed err:","error":"scannable dest type ptr with >1 columns (4) in result"}
+{"level":"ERROR","time":"2022-03-21T15:39:29.013+0800","caller":"controllers/community.go:32","msg":"logic.GetCommunityDetailByID() failed, err:","error":"scannable dest type ptr with >1 columns (4) in result"}
+{"level":"INFO","time":"2022-03-21T15:39:29.014+0800","caller":"logger/logger.go:74","msg":"/api/blog/community/1","status":200,"method":"GET","path":"/api/blog/community/1","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0027792}
+{"level":"INFO","time":"2022-03-21T15:41:49.168+0800","caller":"blog/main.go:72","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-21T15:41:49.169+0800","caller":"blog/main.go:81","msg":"Server exiting"}
+{"level":"ERROR","time":"2022-03-21T15:41:55.122+0800","caller":"mysql/community.go:30","msg":"db.select failed err:","error":"nil pointer passed to StructScan destination"}
+{"level":"ERROR","time":"2022-03-21T15:41:55.123+0800","caller":"controllers/community.go:32","msg":"logic.GetCommunityDetailByID() failed, err:","error":"nil pointer passed to StructScan destination"}
+{"level":"INFO","time":"2022-03-21T15:41:55.123+0800","caller":"logger/logger.go:74","msg":"/api/blog/community/1","status":200,"method":"GET","path":"/api/blog/community/1","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0039493}
+{"level":"INFO","time":"2022-03-21T15:43:08.616+0800","caller":"blog/main.go:72","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-21T15:43:08.617+0800","caller":"blog/main.go:81","msg":"Server exiting"}
+{"level":"ERROR","time":"2022-03-21T15:43:16.818+0800","caller":"mysql/community.go:30","msg":"db.select failed err:","error":"scannable dest type ptr with >1 columns (4) in result"}
+{"level":"ERROR","time":"2022-03-21T15:43:16.819+0800","caller":"controllers/community.go:32","msg":"logic.GetCommunityDetailByID() failed, err:","error":"scannable dest type ptr with >1 columns (4) in result"}
+{"level":"INFO","time":"2022-03-21T15:43:16.819+0800","caller":"logger/logger.go:74","msg":"/api/blog/community/1","status":200,"method":"GET","path":"/api/blog/community/1","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0022757}
+{"level":"INFO","time":"2022-03-21T15:49:44.410+0800","caller":"blog/main.go:72","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-21T15:49:44.411+0800","caller":"blog/main.go:81","msg":"Server exiting"}
+{"level":"INFO","time":"2022-03-21T15:49:49.518+0800","caller":"logger/logger.go:74","msg":"/api/blog/community/1","status":200,"method":"GET","path":"/api/blog/community/1","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0016581}
+{"level":"INFO","time":"2022-03-21T15:50:05.556+0800","caller":"logger/logger.go:74","msg":"/api/blog/community/2","status":200,"method":"GET","path":"/api/blog/community/2","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0010009}
+{"level":"INFO","time":"2022-03-22T12:49:49.508+0800","caller":"blog/main.go:72","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-22T12:49:49.511+0800","caller":"blog/main.go:81","msg":"Server exiting"}
+{"level":"INFO","time":"2022-03-22T12:49:59.929+0800","caller":"logger/logger.go:74","msg":"/api/blog/login","status":200,"method":"POST","path":"/api/blog/login","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0033496}
+{"level":"INFO","time":"2022-03-22T12:54:09.415+0800","caller":"logger/logger.go:74","msg":"/api/blog/createpost","status":200,"method":"POST","path":"/api/blog/createpost","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0086743}
+{"level":"INFO","time":"2022-03-22T14:33:37.477+0800","caller":"blog/main.go:72","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-22T14:33:37.478+0800","caller":"blog/main.go:81","msg":"Server exiting"}
+{"level":"ERROR","time":"2022-03-22T14:34:08.546+0800","caller":"logic/post.go:32","msg":"mysql.GetUserNameByID"}
+{"level":"ERROR","time":"2022-03-22T14:34:08.547+0800","caller":"controllers/post.go:51","msg":"logic.GetPostDetail failed, err:","error":"sql: no rows in result set"}
+{"level":"INFO","time":"2022-03-22T14:34:08.548+0800","caller":"logger/logger.go:74","msg":"/api/blog/postdetail/1","status":200,"method":"GET","path":"/api/blog/postdetail/1","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0076264}
+{"level":"INFO","time":"2022-03-22T14:36:07.869+0800","caller":"blog/main.go:72","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-22T14:36:07.870+0800","caller":"blog/main.go:81","msg":"Server exiting"}
+{"level":"ERROR","time":"2022-03-22T14:36:15.108+0800","caller":"logic/post.go:32","msg":"mysql.GetUserNameByID"}
+{"level":"ERROR","time":"2022-03-22T14:36:15.108+0800","caller":"controllers/post.go:53","msg":"logic.GetPostDetail failed, err:","error":"sql: no rows in result set"}
+{"level":"INFO","time":"2022-03-22T14:36:15.109+0800","caller":"logger/logger.go:74","msg":"/api/blog/postdetail/1","status":200,"method":"GET","path":"/api/blog/postdetail/1","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0061001}
+{"level":"ERROR","time":"2022-03-22T14:36:40.094+0800","caller":"logic/post.go:32","msg":"mysql.GetUserNameByID"}
+{"level":"ERROR","time":"2022-03-22T14:36:40.095+0800","caller":"controllers/post.go:53","msg":"logic.GetPostDetail failed, err:","error":"sql: no rows in result set"}
+{"level":"INFO","time":"2022-03-22T14:36:40.095+0800","caller":"logger/logger.go:74","msg":"/api/blog/postdetail/1","status":200,"method":"GET","path":"/api/blog/postdetail/1","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.001714}
+{"level":"INFO","time":"2022-03-22T14:39:09.541+0800","caller":"blog/main.go:72","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-22T14:39:09.543+0800","caller":"blog/main.go:81","msg":"Server exiting"}
+{"level":"ERROR","time":"2022-03-22T14:39:24.441+0800","caller":"logic/post.go:32","msg":"mysql.GetUserNameByID failed, err:","error":"sql: no rows in result set"}
+{"level":"ERROR","time":"2022-03-22T14:39:24.442+0800","caller":"controllers/post.go:53","msg":"logic.GetPostDetail failed, err:","error":"sql: no rows in result set"}
+{"level":"INFO","time":"2022-03-22T14:39:24.442+0800","caller":"logger/logger.go:74","msg":"/api/blog/postdetail/1","status":200,"method":"GET","path":"/api/blog/postdetail/1","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0044432}
+{"level":"INFO","time":"2022-03-22T14:41:29.773+0800","caller":"blog/main.go:72","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-22T14:41:29.774+0800","caller":"blog/main.go:81","msg":"Server exiting"}
+{"level":"ERROR","time":"2022-03-22T14:41:36.129+0800","caller":"mysql/community.go:34","msg":"db.select failed err:","error":"sql: no rows in result set"}
+{"level":"WARN","time":"2022-03-22T14:41:36.130+0800","caller":"mysql/community.go:36","msg":"no data"}
+{"level":"ERROR","time":"2022-03-22T14:41:36.131+0800","caller":"logic/post.go:38","msg":"mysql.GetCommunityDetailByID failed, err:","error":"社区不存在"}
+{"level":"ERROR","time":"2022-03-22T14:41:36.171+0800","caller":"controllers/post.go:53","msg":"logic.GetPostDetail failed, err:","error":"社区不存在"}
+{"level":"INFO","time":"2022-03-22T14:41:36.171+0800","caller":"logger/logger.go:74","msg":"/api/blog/postdetail/1","status":200,"method":"GET","path":"/api/blog/postdetail/1","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0475638}
+{"level":"INFO","time":"2022-03-22T14:42:52.742+0800","caller":"blog/main.go:72","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-22T14:42:52.743+0800","caller":"blog/main.go:81","msg":"Server exiting"}
+{"level":"ERROR","time":"2022-03-22T14:42:58.740+0800","caller":"logic/post.go:32","msg":"mysql.GetUserNameByID failed, err:","error":"sql: no rows in result set"}
+{"level":"ERROR","time":"2022-03-22T14:42:58.742+0800","caller":"controllers/post.go:53","msg":"logic.GetPostDetail failed, err:","error":"sql: no rows in result set"}
+{"level":"INFO","time":"2022-03-22T14:42:58.742+0800","caller":"logger/logger.go:74","msg":"/api/blog/postdetail/1","status":200,"method":"GET","path":"/api/blog/postdetail/1","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0052605}
+{"level":"INFO","time":"2022-03-22T14:43:29.829+0800","caller":"blog/main.go:72","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-22T14:43:29.829+0800","caller":"blog/main.go:81","msg":"Server exiting"}
+{"level":"ERROR","time":"2022-03-22T14:43:52.910+0800","caller":"logic/post.go:32","msg":"mysql.GetUserByID failed, err:","error":"sql: no rows in result set"}
+{"level":"ERROR","time":"2022-03-22T14:43:52.911+0800","caller":"controllers/post.go:53","msg":"logic.GetPostDetail failed, err:","error":"sql: no rows in result set"}
+{"level":"INFO","time":"2022-03-22T14:43:52.912+0800","caller":"logger/logger.go:74","msg":"/api/blog/postdetail/1","status":200,"method":"GET","path":"/api/blog/postdetail/1","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0046318}
+{"level":"INFO","time":"2022-03-22T14:44:14.029+0800","caller":"blog/main.go:72","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-22T14:44:14.030+0800","caller":"blog/main.go:81","msg":"Server exiting"}
+{"level":"ERROR","time":"2022-03-22T14:44:21.369+0800","caller":"logic/post.go:32","msg":"mysql.GetUserByID failed, err:","error":"nil pointer passed to StructScan destination"}
+{"level":"ERROR","time":"2022-03-22T14:44:21.370+0800","caller":"controllers/post.go:53","msg":"logic.GetPostDetail failed, err:","error":"nil pointer passed to StructScan destination"}
+{"level":"INFO","time":"2022-03-22T14:44:21.370+0800","caller":"logger/logger.go:74","msg":"/api/blog/postdetail/1","status":200,"method":"GET","path":"/api/blog/postdetail/1","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0047359}
+{"level":"INFO","time":"2022-03-22T14:44:44.668+0800","caller":"blog/main.go:72","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-22T14:44:44.669+0800","caller":"blog/main.go:81","msg":"Server exiting"}
+{"level":"ERROR","time":"2022-03-22T14:44:51.777+0800","caller":"logic/post.go:32","msg":"mysql.GetUserByID failed, err:","error":"sql: no rows in result set"}
+{"level":"ERROR","time":"2022-03-22T14:44:51.778+0800","caller":"controllers/post.go:53","msg":"logic.GetPostDetail failed, err:","error":"sql: no rows in result set"}
+{"level":"INFO","time":"2022-03-22T14:44:51.778+0800","caller":"logger/logger.go:74","msg":"/api/blog/postdetail/1","status":200,"method":"GET","path":"/api/blog/postdetail/1","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0057935}
+{"level":"INFO","time":"2022-03-22T14:47:04.078+0800","caller":"blog/main.go:72","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-22T14:47:04.078+0800","caller":"blog/main.go:81","msg":"Server exiting"}
+{"level":"ERROR","time":"2022-03-22T14:47:10.950+0800","caller":"logic/post.go:32","msg":"mysql.GetUserByID failed, err:","error":"sql: no rows in result set"}
+{"level":"ERROR","time":"2022-03-22T14:47:10.951+0800","caller":"controllers/post.go:51","msg":"logic.GetPostDetail failed, err:","error":"sql: no rows in result set"}
+{"level":"INFO","time":"2022-03-22T14:47:10.951+0800","caller":"logger/logger.go:74","msg":"/api/blog/postdetail/1","status":200,"method":"GET","path":"/api/blog/postdetail/1","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.005326}
+{"level":"INFO","time":"2022-03-22T14:51:01.798+0800","caller":"blog/main.go:72","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-22T14:51:01.799+0800","caller":"blog/main.go:81","msg":"Server exiting"}
+{"level":"ERROR","time":"2022-03-22T14:51:11.840+0800","caller":"logic/post.go:27","msg":"mysql.GetPostByID failed, err:","error":"Error 1054: Unknown column 'communtiy_id' in 'field list'"}
+{"level":"ERROR","time":"2022-03-22T14:51:11.841+0800","caller":"controllers/post.go:51","msg":"logic.GetPostDetail failed, err:","error":"Error 1054: Unknown column 'communtiy_id' in 'field list'"}
+{"level":"INFO","time":"2022-03-22T14:51:11.842+0800","caller":"logger/logger.go:74","msg":"/api/blog/postdetail/1","status":200,"method":"GET","path":"/api/blog/postdetail/1","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0046792}
+{"level":"INFO","time":"2022-03-22T14:52:34.502+0800","caller":"blog/main.go:72","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-22T14:52:34.505+0800","caller":"blog/main.go:81","msg":"Server exiting"}
+{"level":"ERROR","time":"2022-03-22T14:52:41.980+0800","caller":"logic/post.go:27","msg":"mysql.GetPostByID failed, err:","error":"sql: no rows in result set"}
+{"level":"ERROR","time":"2022-03-22T14:52:41.981+0800","caller":"controllers/post.go:51","msg":"logic.GetPostDetail failed, err:","error":"sql: no rows in result set"}
+{"level":"INFO","time":"2022-03-22T14:52:41.981+0800","caller":"logger/logger.go:74","msg":"/api/blog/postdetail/1","status":200,"method":"GET","path":"/api/blog/postdetail/1","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0043023}
+{"level":"INFO","time":"2022-03-22T14:57:26.909+0800","caller":"blog/main.go:72","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-22T14:57:26.910+0800","caller":"blog/main.go:81","msg":"Server exiting"}
+{"level":"ERROR","time":"2022-03-22T14:57:32.831+0800","caller":"logic/post.go:27","msg":"mysql.GetPostByID failed, err:","error":"sql: no rows in result set"}
+{"level":"ERROR","time":"2022-03-22T14:57:32.832+0800","caller":"controllers/post.go:51","msg":"logic.GetPostDetail failed, err:","error":"sql: no rows in result set"}
+{"level":"INFO","time":"2022-03-22T14:57:32.832+0800","caller":"logger/logger.go:74","msg":"/api/blog/postdetail/1","status":200,"method":"GET","path":"/api/blog/postdetail/1","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0058192}
+{"level":"ERROR","time":"2022-03-22T14:57:37.672+0800","caller":"controllers/post.go:44","msg":"get post detail with invaild param","error":"strconv.ParseInt: parsing \":1\": invalid syntax"}
+{"level":"INFO","time":"2022-03-22T14:57:37.673+0800","caller":"logger/logger.go:74","msg":"/api/blog/postdetail/:1","status":200,"method":"GET","path":"/api/blog/postdetail/:1","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0007472}
+{"level":"ERROR","time":"2022-03-22T14:57:47.153+0800","caller":"logic/post.go:27","msg":"mysql.GetPostByID failed, err:","error":"sql: no rows in result set"}
+{"level":"ERROR","time":"2022-03-22T14:57:47.153+0800","caller":"controllers/post.go:51","msg":"logic.GetPostDetail failed, err:","error":"sql: no rows in result set"}
+{"level":"INFO","time":"2022-03-22T14:57:47.154+0800","caller":"logger/logger.go:74","msg":"/api/blog/postdetail/2","status":200,"method":"GET","path":"/api/blog/postdetail/2","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0026337}
+{"level":"ERROR","time":"2022-03-22T14:57:54.909+0800","caller":"logic/post.go:27","msg":"mysql.GetPostByID failed, err:","error":"sql: no rows in result set"}
+{"level":"ERROR","time":"2022-03-22T14:57:54.909+0800","caller":"controllers/post.go:51","msg":"logic.GetPostDetail failed, err:","error":"sql: no rows in result set"}
+{"level":"INFO","time":"2022-03-22T14:57:54.910+0800","caller":"logger/logger.go:74","msg":"/api/blog/postdetail/1","status":200,"method":"GET","path":"/api/blog/postdetail/1","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0014652}
+{"level":"INFO","time":"2022-03-22T15:22:00.919+0800","caller":"blog/main.go:72","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-22T15:22:00.920+0800","caller":"blog/main.go:81","msg":"Server exiting"}
+{"level":"ERROR","time":"2022-03-22T15:22:09.217+0800","caller":"logic/post.go:27","msg":"mysql.GetPostByID failed, err:","error":"sql: no rows in result set"}
+{"level":"ERROR","time":"2022-03-22T15:22:09.218+0800","caller":"controllers/post.go:51","msg":"logic.GetPostDetail failed, err:","error":"sql: no rows in result set"}
+{"level":"INFO","time":"2022-03-22T15:22:09.219+0800","caller":"logger/logger.go:74","msg":"/api/blog/postdetail/1","status":200,"method":"GET","path":"/api/blog/postdetail/1","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0050202}
+{"level":"INFO","time":"2022-03-22T15:23:42.822+0800","caller":"blog/main.go:72","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-22T15:23:42.825+0800","caller":"blog/main.go:81","msg":"Server exiting"}
+{"level":"ERROR","time":"2022-03-22T15:23:49.409+0800","caller":"logic/post.go:27","msg":"mysql.GetPostByID failed, err:","error":"sql: no rows in result set"}
+{"level":"ERROR","time":"2022-03-22T15:23:49.410+0800","caller":"controllers/post.go:51","msg":"logic.GetPostDetail failed, err:","error":"sql: no rows in result set"}
+{"level":"INFO","time":"2022-03-22T15:23:49.411+0800","caller":"logger/logger.go:74","msg":"/api/blog/postdetail/1","status":200,"method":"GET","path":"/api/blog/postdetail/1","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0026211}
+{"level":"INFO","time":"2022-03-22T15:25:35.736+0800","caller":"blog/main.go:72","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-22T15:25:35.736+0800","caller":"blog/main.go:81","msg":"Server exiting"}
+{"level":"ERROR","time":"2022-03-22T15:25:42.856+0800","caller":"logic/post.go:27","msg":"mysql.GetPostByID failed, err:","error":"sql: no rows in result set"}
+{"level":"ERROR","time":"2022-03-22T15:25:42.857+0800","caller":"controllers/post.go:51","msg":"logic.GetPostDetail failed, err:","error":"sql: no rows in result set"}
+{"level":"INFO","time":"2022-03-22T15:25:42.857+0800","caller":"logger/logger.go:74","msg":"/api/blog/postdetail/1","status":200,"method":"GET","path":"/api/blog/postdetail/1","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0027956}
+{"level":"INFO","time":"2022-03-22T15:33:15.142+0800","caller":"logger/logger.go:74","msg":"/api/blog/postdetail/1161190575185920","status":200,"method":"GET","path":"/api/blog/postdetail/1161190575185920","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0018066}
+{"level":"INFO","time":"2022-03-23T11:16:17.672+0800","caller":"blog/main.go:72","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-23T11:16:17.673+0800","caller":"blog/main.go:81","msg":"Server exiting"}
+{"level":"INFO","time":"2022-03-23T11:16:47.022+0800","caller":"logger/logger.go:74","msg":"/api/blog/postlist","status":200,"method":"GET","path":"/api/blog/postlist","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0000161}
+{"level":"INFO","time":"2022-03-23T11:16:59.436+0800","caller":"logger/logger.go:74","msg":"/api/blog/postlist","status":200,"method":"GET","path":"/api/blog/postlist","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0}
+{"level":"INFO","time":"2022-03-23T11:17:02.896+0800","caller":"logger/logger.go:74","msg":"/api/blog/login","status":200,"method":"POST","path":"/api/blog/login","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.001109}
+{"level":"INFO","time":"2022-03-23T11:17:14.235+0800","caller":"logger/logger.go:74","msg":"/api/blog/postlist","status":200,"method":"GET","path":"/api/blog/postlist","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0046275}
+{"level":"INFO","time":"2022-03-23T11:18:01.493+0800","caller":"blog/main.go:72","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-23T11:18:01.493+0800","caller":"blog/main.go:81","msg":"Server exiting"}
+{"level":"ERROR","time":"2022-03-23T11:18:06.808+0800","caller":"controllers/user.go:27","msg":"logic.SignUp(p) failed","error":"用户已存在"}
+{"level":"INFO","time":"2022-03-23T11:18:06.809+0800","caller":"logger/logger.go:74","msg":"/api/blog/signup","status":200,"method":"POST","path":"/api/blog/signup","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0031559}
+{"level":"INFO","time":"2022-03-23T11:18:13.204+0800","caller":"logger/logger.go:74","msg":"/api/blog/postlist","status":200,"method":"GET","path":"/api/blog/postlist","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0023075}
+{"level":"INFO","time":"2022-03-23T11:18:14.928+0800","caller":"logger/logger.go:74","msg":"/api/blog/postlist","status":200,"method":"GET","path":"/api/blog/postlist","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0015179}
+{"level":"INFO","time":"2022-03-23T11:18:16.735+0800","caller":"logger/logger.go:74","msg":"/api/blog/postlist","status":200,"method":"GET","path":"/api/blog/postlist","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0011785}
+{"level":"ERROR","time":"2022-03-23T11:21:40.756+0800","caller":"controllers/post.go:19","msg":"create post with invaild param","error":"json: cannot unmarshal string into Go struct field Post.community_id of type int64"}
+{"level":"INFO","time":"2022-03-23T11:21:40.756+0800","caller":"logger/logger.go:74","msg":"/api/blog/createpost","status":200,"method":"POST","path":"/api/blog/createpost","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0001618}
+{"level":"INFO","time":"2022-03-23T11:21:57.958+0800","caller":"logger/logger.go:74","msg":"/api/blog/createpost","status":200,"method":"POST","path":"/api/blog/createpost","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0259103}
+{"level":"INFO","time":"2022-03-23T11:22:12.522+0800","caller":"logger/logger.go:74","msg":"/api/blog/postlist","status":200,"method":"GET","path":"/api/blog/postlist","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0030138}
+{"level":"INFO","time":"2022-03-23T11:40:58.116+0800","caller":"logger/logger.go:74","msg":"/api/blog/createpost","status":200,"method":"POST","path":"/api/blog/createpost","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0039176}
+{"level":"INFO","time":"2022-03-23T11:41:37.947+0800","caller":"logger/logger.go:74","msg":"/api/blog/createpost","status":200,"method":"POST","path":"/api/blog/createpost","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0032459}
+{"level":"INFO","time":"2022-03-23T11:41:59.903+0800","caller":"logger/logger.go:74","msg":"/api/blog/createpost","status":200,"method":"POST","path":"/api/blog/createpost","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.003221}
+{"level":"INFO","time":"2022-03-23T11:42:20.618+0800","caller":"logger/logger.go:74","msg":"/api/blog/createpost","status":200,"method":"POST","path":"/api/blog/createpost","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0126596}
+{"level":"INFO","time":"2022-03-23T11:43:10.965+0800","caller":"logger/logger.go:74","msg":"/api/blog/createpost","status":200,"method":"POST","path":"/api/blog/createpost","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0039249}
+{"level":"INFO","time":"2022-03-23T11:44:57.059+0800","caller":"logger/logger.go:74","msg":"/api/blog/createpost","status":200,"method":"POST","path":"/api/blog/createpost","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0042613}
+{"level":"INFO","time":"2022-03-23T11:45:31.136+0800","caller":"logger/logger.go:74","msg":"/api/blog/postlist","status":200,"method":"GET","path":"/api/blog/postlist","query":"page=1&size=2","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0054021}
+{"level":"INFO","time":"2022-03-23T11:45:46.299+0800","caller":"logger/logger.go:74","msg":"/api/blog/postlist","status":200,"method":"GET","path":"/api/blog/postlist","query":"page=2&size=2","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0057856}
+{"level":"INFO","time":"2022-03-23T11:45:54.968+0800","caller":"logger/logger.go:74","msg":"/api/blog/postlist/page=2&size=2","status":200,"method":"GET","path":"/api/blog/postlist/page=2&size=2","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0}
+{"level":"INFO","time":"2022-03-23T11:45:59.622+0800","caller":"logger/logger.go:74","msg":"/api/blog/postlist","status":200,"method":"GET","path":"/api/blog/postlist","query":"page=2&size=2","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0057646}
+{"level":"INFO","time":"2022-03-23T11:46:11.389+0800","caller":"logger/logger.go:74","msg":"/api/blog/postlist","status":200,"method":"GET","path":"/api/blog/postlist","query":"page=3&size=2","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0056985}
+{"level":"INFO","time":"2022-03-23T11:46:34.142+0800","caller":"blog/main.go:72","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-23T11:46:34.142+0800","caller":"blog/main.go:81","msg":"Server exiting"}
+{"level":"INFO","time":"2022-03-23T11:46:39.917+0800","caller":"logger/logger.go:74","msg":"/api/blog/postlist","status":200,"method":"GET","path":"/api/blog/postlist","query":"page=3&size=2","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0033925}
+{"level":"INFO","time":"2022-03-23T11:47:31.748+0800","caller":"logger/logger.go:74","msg":"/api/blog/postlist","status":200,"method":"GET","path":"/api/blog/postlist","query":"page=1&size=2","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0036893}
+{"level":"INFO","time":"2022-03-23T11:48:25.340+0800","caller":"logger/logger.go:74","msg":"/api/blog/postlist","status":200,"method":"GET","path":"/api/blog/postlist","query":"page=1&size=3","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0036912}
+{"level":"INFO","time":"2022-03-26T13:11:20.564+0800","caller":"blog/main.go:72","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-26T13:11:20.565+0800","caller":"blog/main.go:81","msg":"Server exiting"}
+{"level":"INFO","time":"2022-03-26T13:11:50.402+0800","caller":"logger/logger.go:74","msg":"/api/blog/createpost","status":200,"method":"POST","path":"/api/blog/createpost","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0084378}
+{"level":"INFO","time":"2022-03-26T13:12:15.108+0800","caller":"logger/logger.go:74","msg":"/api/blog/postlist","status":200,"method":"GET","path":"/api/blog/postlist","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0052479}
+{"level":"INFO","time":"2022-03-26T13:13:00.494+0800","caller":"logger/logger.go:74","msg":"/api/blog/vote","status":200,"method":"POST","path":"/api/blog/vote","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0002099}
+{"level":"INFO","time":"2022-03-26T13:15:34.233+0800","caller":"blog/main.go:72","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-26T13:15:34.236+0800","caller":"blog/main.go:81","msg":"Server exiting"}
+{"level":"ERROR","time":"2022-03-26T13:15:40.628+0800","caller":"controllers/vote.go:26","msg":"logic.VoteForPost failed, err:","error":"投票时间已过"}
+{"level":"INFO","time":"2022-03-26T13:15:40.629+0800","caller":"logger/logger.go:74","msg":"/api/blog/vote","status":200,"method":"POST","path":"/api/blog/vote","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0015131}
+{"level":"ERROR","time":"2022-03-26T13:15:44.288+0800","caller":"controllers/vote.go:26","msg":"logic.VoteForPost failed, err:","error":"投票时间已过"}
+{"level":"INFO","time":"2022-03-26T13:15:44.289+0800","caller":"logger/logger.go:74","msg":"/api/blog/vote","status":200,"method":"POST","path":"/api/blog/vote","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0010204}
+{"level":"ERROR","time":"2022-03-26T13:15:47.727+0800","caller":"controllers/vote.go:26","msg":"logic.VoteForPost failed, err:","error":"投票时间已过"}
+{"level":"INFO","time":"2022-03-26T13:15:47.727+0800","caller":"logger/logger.go:74","msg":"/api/blog/vote","status":200,"method":"POST","path":"/api/blog/vote","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0005207}
+{"level":"INFO","time":"2022-03-26T13:20:50.347+0800","caller":"logger/logger.go:74","msg":"/api/blog/cretepost","status":200,"method":"POST","path":"/api/blog/cretepost","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0}
+{"level":"ERROR","time":"2022-03-26T13:21:18.897+0800","caller":"controllers/post.go:19","msg":"create post with invaild param","error":"invalid character '/' after object key:value pair"}
+{"level":"INFO","time":"2022-03-26T13:21:18.898+0800","caller":"logger/logger.go:74","msg":"/api/blog/createpost","status":200,"method":"POST","path":"/api/blog/createpost","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0003249}
+{"level":"ERROR","time":"2022-03-26T13:22:26.392+0800","caller":"controllers/post.go:19","msg":"create post with invaild param","error":"invalid character '/' after object key:value pair"}
+{"level":"INFO","time":"2022-03-26T13:22:26.393+0800","caller":"logger/logger.go:74","msg":"/api/blog/createpost","status":200,"method":"POST","path":"/api/blog/createpost","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0010408}
+{"level":"ERROR","time":"2022-03-26T13:23:03.009+0800","caller":"controllers/post.go:19","msg":"create post with invaild param","error":"invalid character '/' after object key:value pair"}
+{"level":"INFO","time":"2022-03-26T13:23:03.010+0800","caller":"logger/logger.go:74","msg":"/api/blog/createpost","status":200,"method":"POST","path":"/api/blog/createpost","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0010979}
+{"level":"INFO","time":"2022-03-26T13:23:06.713+0800","caller":"logger/logger.go:74","msg":"/api/blog/createpost","status":200,"method":"POST","path":"/api/blog/createpost","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0056193}
+{"level":"INFO","time":"2022-03-26T13:23:17.954+0800","caller":"logger/logger.go:74","msg":"/api/blog/postlist","status":200,"method":"GET","path":"/api/blog/postlist","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0015888}
+{"level":"INFO","time":"2022-03-26T13:23:24.163+0800","caller":"blog/main.go:72","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-26T13:23:24.163+0800","caller":"blog/main.go:81","msg":"Server exiting"}
+{"level":"ERROR","time":"2022-03-26T13:24:04.420+0800","caller":"controllers/vote.go:26","msg":"logic.VoteForPost failed, err:","error":"投票时间已过"}
+{"level":"INFO","time":"2022-03-26T13:24:04.421+0800","caller":"logger/logger.go:74","msg":"/api/blog/vote","status":200,"method":"POST","path":"/api/blog/vote","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0021378}
+{"level":"INFO","time":"2022-03-26T13:25:00.561+0800","caller":"blog/main.go:72","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-26T13:25:00.562+0800","caller":"blog/main.go:81","msg":"Server exiting"}
+{"level":"INFO","time":"2022-03-26T13:27:31.472+0800","caller":"logger/logger.go:74","msg":"/api/blog/vote","status":200,"method":"POST","path":"/api/blog/vote","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0005152}
+{"level":"ERROR","time":"2022-03-26T13:27:38.231+0800","caller":"controllers/vote.go:26","msg":"logic.VoteForPost failed, err:","error":"投票时间已过"}
+{"level":"INFO","time":"2022-03-26T13:27:38.232+0800","caller":"logger/logger.go:74","msg":"/api/blog/vote","status":200,"method":"POST","path":"/api/blog/vote","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0016039}
+{"level":"INFO","time":"2022-03-26T13:28:57.193+0800","caller":"logger/logger.go:74","msg":"/api/blog/createpost","status":200,"method":"POST","path":"/api/blog/createpost","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0047912}
+{"level":"INFO","time":"2022-03-26T13:29:12.433+0800","caller":"logger/logger.go:74","msg":"/api/blog/postlist","status":200,"method":"POST","path":"/api/blog/postlist","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0}
+{"level":"INFO","time":"2022-03-26T13:29:15.521+0800","caller":"logger/logger.go:74","msg":"/api/blog/postlist","status":200,"method":"GET","path":"/api/blog/postlist","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0019088}
+{"level":"ERROR","time":"2022-03-26T13:29:21.983+0800","caller":"controllers/vote.go:26","msg":"logic.VoteForPost failed, err:","error":"投票时间已过"}
+{"level":"INFO","time":"2022-03-26T13:29:21.983+0800","caller":"logger/logger.go:74","msg":"/api/blog/vote","status":200,"method":"POST","path":"/api/blog/vote","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0005665}
+{"level":"INFO","time":"2022-03-26T13:30:01.643+0800","caller":"logger/logger.go:74","msg":"/api/blog/vote","status":200,"method":"POST","path":"/api/blog/vote","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0}
+{"level":"INFO","time":"2022-03-26T13:30:32.586+0800","caller":"blog/main.go:72","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-26T13:30:32.587+0800","caller":"blog/main.go:81","msg":"Server exiting"}
+{"level":"ERROR","time":"2022-03-26T13:30:39.136+0800","caller":"controllers/vote.go:26","msg":"logic.VoteForPost failed, err:","error":"投票时间已过"}
+{"level":"INFO","time":"2022-03-26T13:30:39.136+0800","caller":"logger/logger.go:74","msg":"/api/blog/vote","status":200,"method":"POST","path":"/api/blog/vote","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0015755}
+{"level":"INFO","time":"2022-03-26T13:31:29.738+0800","caller":"blog/main.go:72","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-26T13:31:29.741+0800","caller":"blog/main.go:81","msg":"Server exiting"}
+{"level":"ERROR","time":"2022-03-26T13:31:37.735+0800","caller":"controllers/vote.go:26","msg":"logic.VoteForPost failed, err:","error":"投票时间已过"}
+{"level":"INFO","time":"2022-03-26T13:31:37.736+0800","caller":"logger/logger.go:74","msg":"/api/blog/vote","status":200,"method":"POST","path":"/api/blog/vote","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0016708}
+{"level":"INFO","time":"2022-03-26T13:32:24.771+0800","caller":"logger/logger.go:74","msg":"/api/blog/postlist","status":200,"method":"GET","path":"/api/blog/postlist","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0032803}
+{"level":"INFO","time":"2022-03-26T13:33:02.346+0800","caller":"logger/logger.go:74","msg":"/api/blog/postlist","status":200,"method":"GET","path":"/api/blog/postlist","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0003141}
+{"level":"INFO","time":"2022-03-26T13:34:23.503+0800","caller":"logger/logger.go:74","msg":"/api/blog/createpost","status":200,"method":"POST","path":"/api/blog/createpost","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0041139}
+{"level":"INFO","time":"2022-03-26T13:35:05.719+0800","caller":"logger/logger.go:74","msg":"/api/blog/createpost","status":200,"method":"POST","path":"/api/blog/createpost","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0048007}
+{"level":"INFO","time":"2022-03-26T13:35:39.352+0800","caller":"logger/logger.go:74","msg":"/api/blog/createpost","status":200,"method":"POST","path":"/api/blog/createpost","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0038038}
+{"level":"INFO","time":"2022-03-26T13:36:02.064+0800","caller":"logger/logger.go:74","msg":"/api/blog/createpost","status":200,"method":"POST","path":"/api/blog/createpost","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0023812}
+{"level":"INFO","time":"2022-03-26T13:36:40.680+0800","caller":"logger/logger.go:74","msg":"/api/blog/postlist","status":200,"method":"GET","path":"/api/blog/postlist","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0013722}
+{"level":"INFO","time":"2022-03-26T13:38:54.292+0800","caller":"blog/main.go:72","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-26T13:38:54.294+0800","caller":"blog/main.go:81","msg":"Server exiting"}
+{"level":"INFO","time":"2022-03-26T13:39:32.807+0800","caller":"logger/logger.go:74","msg":"/api/blog/postlist","status":200,"method":"GET","path":"/api/blog/postlist","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0037947}
+{"level":"INFO","time":"2022-03-26T13:40:15.082+0800","caller":"logger/logger.go:74","msg":"/api/blog/createpost","status":200,"method":"POST","path":"/api/blog/createpost","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0033064}
+{"level":"INFO","time":"2022-03-26T13:40:31.573+0800","caller":"logger/logger.go:74","msg":"/api/blog/createpost","status":200,"method":"POST","path":"/api/blog/createpost","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0041259}
+{"level":"INFO","time":"2022-03-26T13:40:45.745+0800","caller":"logger/logger.go:74","msg":"/api/blog/createpost","status":200,"method":"POST","path":"/api/blog/createpost","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0022278}
+{"level":"INFO","time":"2022-03-26T13:40:48.574+0800","caller":"logger/logger.go:74","msg":"/api/blog/postlist","status":200,"method":"GET","path":"/api/blog/postlist","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0013134}
+{"level":"INFO","time":"2022-03-26T13:41:28.451+0800","caller":"blog/main.go:72","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-26T13:41:28.453+0800","caller":"blog/main.go:81","msg":"Server exiting"}
+{"level":"INFO","time":"2022-03-26T13:41:33.556+0800","caller":"logger/logger.go:74","msg":"/api/blog/postlist","status":200,"method":"GET","path":"/api/blog/postlist","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0038937}
+{"level":"ERROR","time":"2022-03-26T13:41:53.795+0800","caller":"controllers/vote.go:26","msg":"logic.VoteForPost failed, err:","error":"投票时间已过"}
+{"level":"INFO","time":"2022-03-26T13:41:53.795+0800","caller":"logger/logger.go:74","msg":"/api/blog/vote","status":200,"method":"POST","path":"/api/blog/vote","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0015845}
+{"level":"INFO","time":"2022-03-26T13:47:09.012+0800","caller":"blog/main.go:72","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-26T13:47:09.012+0800","caller":"blog/main.go:81","msg":"Server exiting"}
+{"level":"INFO","time":"2022-03-26T13:47:38.102+0800","caller":"logger/logger.go:74","msg":"/api/blog/createpost","status":200,"method":"POST","path":"/api/blog/createpost","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0044426}
+{"level":"INFO","time":"2022-03-26T13:47:56.964+0800","caller":"logger/logger.go:74","msg":"/api/blog/createpost","status":200,"method":"POST","path":"/api/blog/createpost","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0029437}
+{"level":"INFO","time":"2022-03-26T13:48:00.941+0800","caller":"logger/logger.go:74","msg":"/api/blog/postlist","status":200,"method":"GET","path":"/api/blog/postlist","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0031161}
+{"level":"ERROR","time":"2022-03-26T13:48:10.427+0800","caller":"controllers/vote.go:26","msg":"logic.VoteForPost failed, err:","error":"投票时间已过"}
+{"level":"INFO","time":"2022-03-26T13:48:10.427+0800","caller":"logger/logger.go:74","msg":"/api/blog/vote","status":200,"method":"POST","path":"/api/blog/vote","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0011703}
+{"level":"INFO","time":"2022-03-26T14:10:10.003+0800","caller":"logger/logger.go:74","msg":"/api/blog/postlist","status":200,"method":"GET","path":"/api/blog/postlist","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0037188}
+{"level":"INFO","time":"2022-03-26T14:10:37.200+0800","caller":"logger/logger.go:74","msg":"/api/blog/createpost","status":200,"method":"POST","path":"/api/blog/createpost","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0032965}
+{"level":"INFO","time":"2022-03-26T14:10:51.429+0800","caller":"logger/logger.go:74","msg":"/api/blog/createpost","status":200,"method":"POST","path":"/api/blog/createpost","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0029916}
+{"level":"ERROR","time":"2022-03-26T14:11:02.730+0800","caller":"controllers/vote.go:26","msg":"logic.VoteForPost failed, err:","error":"投票时间已过"}
+{"level":"INFO","time":"2022-03-26T14:11:02.730+0800","caller":"logger/logger.go:74","msg":"/api/blog/vote","status":200,"method":"POST","path":"/api/blog/vote","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0008242}
+{"level":"INFO","time":"2022-03-26T14:12:10.422+0800","caller":"blog/main.go:72","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-26T14:12:10.423+0800","caller":"blog/main.go:81","msg":"Server exiting"}
+{"level":"INFO","time":"2022-03-26T14:12:30.854+0800","caller":"logger/logger.go:74","msg":"/api/blog/createpost","status":200,"method":"POST","path":"/api/blog/createpost","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0040387}
+{"level":"INFO","time":"2022-03-26T14:12:35.360+0800","caller":"logger/logger.go:74","msg":"/api/blog/postlist","status":200,"method":"GET","path":"/api/blog/postlist","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0038074}
+{"level":"INFO","time":"2022-03-26T14:12:40.201+0800","caller":"logger/logger.go:74","msg":"/api/blog/vote","status":200,"method":"POST","path":"/api/blog/vote","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0008161}
+{"level":"INFO","time":"2022-03-26T14:15:32.122+0800","caller":"logger/logger.go:74","msg":"/api/blog/vote","status":200,"method":"POST","path":"/api/blog/vote","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0006124}
+{"level":"INFO","time":"2022-03-26T15:00:09.014+0800","caller":"blog/main.go:72","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-26T15:00:09.017+0800","caller":"blog/main.go:81","msg":"Server exiting"}
+{"level":"ERROR","time":"2022-03-26T15:01:28.124+0800","caller":"controllers/post.go:83","msg":"logic.GetPostListByCommunity failed, err:","error":"Error 1054: Unknown column 'updata_time' in 'field list'"}
+{"level":"INFO","time":"2022-03-26T15:01:28.125+0800","caller":"logger/logger.go:74","msg":"/api/blog/postlistbycommunity/1","status":200,"method":"GET","path":"/api/blog/postlistbycommunity/1","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0014795}
+{"level":"INFO","time":"2022-03-26T15:01:50.110+0800","caller":"blog/main.go:72","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-26T15:01:50.111+0800","caller":"blog/main.go:81","msg":"Server exiting"}
+{"level":"INFO","time":"2022-03-26T15:01:55.594+0800","caller":"logger/logger.go:74","msg":"/api/blog/postlistbycommunity/1","status":200,"method":"GET","path":"/api/blog/postlistbycommunity/1","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0032651}
+{"level":"INFO","time":"2022-03-27T13:13:54.346+0800","caller":"blog/main.go:72","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-27T13:13:54.362+0800","caller":"blog/main.go:81","msg":"Server exiting"}
+{"level":"INFO","time":"2022-03-27T13:14:32.785+0800","caller":"logger/logger.go:74","msg":"/api/blog/deletepost/2630461318766592","status":200,"method":"GET","path":"/api/blog/deletepost/2630461318766592","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0}
+{"level":"ERROR","time":"2022-03-27T13:14:38.150+0800","caller":"logic/post.go:106","msg":"mysql.GetUserIDByPostID failed, err:","error":"sql: Scan error on column index 0, name \"author_id\": unsupported Scan, storing driver.Value type int64 into type *models.Post"}
+{"level":"INFO","time":"2022-03-27T13:14:38.151+0800","caller":"logger/logger.go:74","msg":"/api/blog/deletepost/2630461318766592","status":200,"method":"DELETE","path":"/api/blog/deletepost/2630461318766592","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0037662}
+{"level":"INFO","time":"2022-03-27T13:34:11.707+0800","caller":"blog/main.go:72","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-27T13:34:11.707+0800","caller":"blog/main.go:81","msg":"Server exiting"}
+{"level":"ERROR","time":"2022-03-27T13:34:19.025+0800","caller":"logic/post.go:106","msg":"mysql.GetUserIDByPostID failed, err:","error":"sql: Scan error on column index 0, name \"author_id\": unsupported Scan, storing driver.Value type int64 into type *models.Post"}
+{"level":"INFO","time":"2022-03-27T13:34:19.026+0800","caller":"logger/logger.go:74","msg":"/api/blog/deletepost/2630461318766592","status":200,"method":"DELETE","path":"/api/blog/deletepost/2630461318766592","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0040684}
+{"level":"INFO","time":"2022-03-27T13:35:02.586+0800","caller":"blog/main.go:72","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-27T13:35:02.586+0800","caller":"blog/main.go:81","msg":"Server exiting"}
+{"level":"INFO","time":"2022-03-27T13:35:11.153+0800","caller":"logger/logger.go:74","msg":"/api/blog/deletepost/2630461318766592","status":200,"method":"DELETE","path":"/api/blog/deletepost/2630461318766592","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0060809}
+{"level":"INFO","time":"2022-03-27T13:54:02.493+0800","caller":"logger/logger.go:74","msg":"/api/blog/postlist","status":200,"method":"GET","path":"/api/blog/postlist","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0075002}
+{"level":"ERROR","time":"2022-03-27T13:54:30.594+0800","caller":"controllers/user.go:17","msg":"signup with invaild param","error":"Key: 'ParamSignUp.RePassword' Error:Field validation for 'RePassword' failed on the 'required' tag"}
+{"level":"INFO","time":"2022-03-27T13:54:30.594+0800","caller":"logger/logger.go:74","msg":"/api/blog/signup","status":200,"method":"POST","path":"/api/blog/signup","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.001}
+{"level":"INFO","time":"2022-03-27T13:54:46.034+0800","caller":"logger/logger.go:74","msg":"/api/blog/signup","status":200,"method":"POST","path":"/api/blog/signup","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0084394}
+{"level":"INFO","time":"2022-03-27T13:54:52.923+0800","caller":"logger/logger.go:74","msg":"/api/blog/login","status":200,"method":"POST","path":"/api/blog/login","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.001}
+{"level":"INFO","time":"2022-03-27T13:55:18.503+0800","caller":"logger/logger.go:74","msg":"/api/blog/deletepost/2630044304285696","status":200,"method":"DELETE","path":"/api/blog/deletepost/2630044304285696","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0010806}
+{"level":"INFO","time":"2022-03-27T13:55:33.714+0800","caller":"logger/logger.go:74","msg":"/api/blog/deletepost/2630044304285696","status":200,"method":"DELETE","path":"/api/blog/deletepost/2630044304285696","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0015008}
+{"level":"INFO","time":"2022-03-27T13:58:31.723+0800","caller":"blog/main.go:72","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-27T13:58:31.724+0800","caller":"blog/main.go:81","msg":"Server exiting"}
+{"level":"INFO","time":"2022-03-27T13:58:40.011+0800","caller":"logger/logger.go:74","msg":"/api/blog/deletepost/2630044304285696","status":200,"method":"DELETE","path":"/api/blog/deletepost/2630044304285696","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0045005}
+{"level":"INFO","time":"2022-03-27T13:59:04.539+0800","caller":"logger/logger.go:74","msg":"/api/blog/deletepost/2630044304285696","status":200,"method":"DELETE","path":"/api/blog/deletepost/2630044304285696","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0040009}
+{"level":"INFO","time":"2022-03-27T13:59:32.644+0800","caller":"blog/main.go:72","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-29T15:31:28.928+0800","caller":"blog/main.go:72","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-29T15:31:29.024+0800","caller":"blog/main.go:81","msg":"Server exiting"}
+{"level":"INFO","time":"2022-04-06T18:25:18.564+0800","caller":"logger/logger.go:74","msg":"/api/blog/login","status":200,"method":"POST","path":"/api/blog/login","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0103616}
+{"level":"ERROR","time":"2022-04-06T18:25:35.023+0800","caller":"controllers/post.go:33","msg":"logic.CreatePost failed, err:","error":"redis: can't marshal redis.Z (implement encoding.BinaryMarshaler)"}
+{"level":"INFO","time":"2022-04-06T18:25:35.024+0800","caller":"logger/logger.go:74","msg":"/api/blog/createpost","status":200,"method":"POST","path":"/api/blog/createpost","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0136118}
+{"level":"INFO","time":"2022-04-06T18:26:29.164+0800","caller":"blog/main.go:72","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-04-06T18:26:29.167+0800","caller":"blog/main.go:81","msg":"Server exiting"}
+{"level":"INFO","time":"2022-04-06T18:26:35.111+0800","caller":"logger/logger.go:74","msg":"/api/blog/createpost","status":200,"method":"POST","path":"/api/blog/createpost","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0187761}
+{"level":"INFO","time":"2022-04-06T18:26:50.310+0800","caller":"logger/logger.go:74","msg":"/api/blog/postlist","status":200,"method":"GET","path":"/api/blog/postlist","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0157945}
+{"level":"INFO","time":"2022-04-06T18:27:26.757+0800","caller":"blog/main.go:72","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-04-06T18:27:26.759+0800","caller":"blog/main.go:81","msg":"Server exiting"}
+{"level":"INFO","time":"2022-04-06T18:27:33.726+0800","caller":"logger/logger.go:74","msg":"/api/blog/postlist","status":200,"method":"GET","path":"/api/blog/postlist","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0073352}
+{"level":"ERROR","time":"2022-04-06T18:27:36.796+0800","caller":"controllers/post.go:33","msg":"logic.CreatePost failed, err:","error":"redis: can't marshal redis.Z (implement encoding.BinaryMarshaler)"}
+{"level":"INFO","time":"2022-04-06T18:27:36.797+0800","caller":"logger/logger.go:74","msg":"/api/blog/createpost","status":200,"method":"POST","path":"/api/blog/createpost","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0048752}
+{"level":"INFO","time":"2022-04-06T18:28:28.997+0800","caller":"blog/main.go:72","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-04-06T18:28:28.999+0800","caller":"blog/main.go:81","msg":"Server exiting"}
+{"level":"INFO","time":"2022-04-12T18:18:16.392+0800","caller":"logger/logger.go:74","msg":"/api/blog/login","status":200,"method":"POST","path":"/api/blog/login","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.1082322}
+{"level":"INFO","time":"2022-04-12T18:19:01.792+0800","caller":"blog/main.go:72","msg":"Shutdown Server ..."}
+{"level":"ERROR","time":"2022-09-19T14:16:30.845+0800","caller":"controllers/user.go:51","msg":"logic.Login(p) failed, err:","error":"密码错误"}
+{"level":"INFO","time":"2022-09-19T14:16:30.891+0800","caller":"logger/logger.go:74","msg":"/api/blog/login","status":200,"method":"POST","path":"/api/blog/login","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.0495446}
+{"level":"INFO","time":"2022-09-19T14:16:35.191+0800","caller":"logger/logger.go:74","msg":"/api/blog/login","status":200,"method":"POST","path":"/api/blog/login","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.0010001}
+{"level":"ERROR","time":"2022-09-19T14:21:10.367+0800","caller":"controllers/comment.go:24","msg":"BindJSON failed","error":"json: cannot unmarshal string into Go struct field Comment.post_id of type int64"}
+{"level":"INFO","time":"2022-09-19T14:21:10.367+0800","caller":"logger/logger.go:74","msg":"/api/blog/comment","status":200,"method":"POST","path":"/api/blog/comment","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0}
+{"level":"INFO","time":"2022-09-19T14:22:00.885+0800","caller":"logger/logger.go:74","msg":"/api/blog/comment","status":200,"method":"POST","path":"/api/blog/comment","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.006123}
+{"level":"INFO","time":"2022-09-19T14:25:03.803+0800","caller":"blog/main.go:72","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-09-19T14:25:03.803+0800","caller":"blog/main.go:81","msg":"Server exiting"}
+{"level":"ERROR","time":"2022-09-19T14:25:12.423+0800","caller":"controllers/comment.go:31","msg":"logic.CreatePost failed, err:","error":"Error 1364: Field 'comment_id' doesn't have a default value"}
+{"level":"INFO","time":"2022-09-19T14:25:12.467+0800","caller":"logger/logger.go:74","msg":"/api/blog/comment","status":200,"method":"POST","path":"/api/blog/comment","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.0496143}
+{"level":"INFO","time":"2022-09-19T14:27:39.318+0800","caller":"blog/main.go:72","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-09-19T14:27:39.320+0800","caller":"blog/main.go:81","msg":"Server exiting"}
+{"level":"ERROR","time":"2022-09-19T14:27:47.641+0800","caller":"controllers/comment.go:31","msg":"logic.CreatePost failed, err:","error":"Error 1136: Column count doesn't match value count at row 1"}
+{"level":"INFO","time":"2022-09-19T14:27:47.675+0800","caller":"logger/logger.go:74","msg":"/api/blog/comment","status":200,"method":"POST","path":"/api/blog/comment","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.0391093}
+{"level":"INFO","time":"2022-09-19T14:28:09.367+0800","caller":"blog/main.go:72","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-09-19T14:28:09.370+0800","caller":"blog/main.go:81","msg":"Server exiting"}
+{"level":"INFO","time":"2022-09-19T14:28:22.468+0800","caller":"logger/logger.go:74","msg":"/api/blog/comment","status":200,"method":"POST","path":"/api/blog/comment","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.0119186}
+{"level":"INFO","time":"2022-09-19T14:31:24.875+0800","caller":"blog/main.go:72","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-09-19T14:31:24.877+0800","caller":"blog/main.go:81","msg":"Server exiting"}
+{"level":"INFO","time":"2022-09-19T14:32:17.361+0800","caller":"blog/main.go:72","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-09-19T14:32:17.394+0800","caller":"blog/main.go:81","msg":"Server exiting"}
+{"level":"INFO","time":"2022-09-19T16:41:26.331+0800","caller":"logger/logger.go:74","msg":"/api/blog/comment","status":200,"method":"POST","path":"/api/blog/comment","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.0076758}
+{"level":"INFO","time":"2022-09-19T16:41:34.549+0800","caller":"logger/logger.go:74","msg":"/api/blog/comment","status":200,"method":"POST","path":"/api/blog/comment","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.002}
+{"level":"ERROR","time":"2022-09-19T18:02:24.574+0800","caller":"controllers/post.go:77","msg":"get communityid with invalid param","error":"strconv.Atoi: parsing \":1\": invalid syntax"}
+{"level":"INFO","time":"2022-09-19T18:02:24.575+0800","caller":"logger/logger.go:74","msg":"/api/blog/postlistbycommunity/:1","status":200,"method":"GET","path":"/api/blog/postlistbycommunity/:1","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.0010435}
+{"level":"ERROR","time":"2022-09-19T18:02:31.092+0800","caller":"controllers/post.go:77","msg":"get communityid with invalid param","error":"strconv.Atoi: parsing \":1\": invalid syntax"}
+{"level":"INFO","time":"2022-09-19T18:02:31.092+0800","caller":"logger/logger.go:74","msg":"/api/blog/postlistbycommunity/:1","status":200,"method":"GET","path":"/api/blog/postlistbycommunity/:1","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.0009598}
+{"level":"INFO","time":"2022-09-19T18:02:53.187+0800","caller":"logger/logger.go:74","msg":"/api/blog/postlistbycommunity/1","status":200,"method":"GET","path":"/api/blog/postlistbycommunity/1","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.0081669}
+{"level":"INFO","time":"2022-09-19T18:15:54.634+0800","caller":"blog/main.go:72","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-09-19T18:15:54.636+0800","caller":"blog/main.go:81","msg":"Server exiting"}
+{"level":"INFO","time":"2022-09-19T18:16:25.894+0800","caller":"blog/main.go:72","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-09-19T18:16:25.928+0800","caller":"blog/main.go:81","msg":"Server exiting"}
+{"level":"INFO","time":"2022-09-19T18:17:14.638+0800","caller":"blog/main.go:72","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-09-19T18:17:14.673+0800","caller":"blog/main.go:81","msg":"Server exiting"}
+{"level":"INFO","time":"2022-09-19T18:17:46.123+0800","caller":"logger/logger.go:74","msg":"/api/blog/comment/2629984627728384","status":200,"method":"GET","path":"/api/blog/comment/2629984627728384","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.0007772}
+{"level":"INFO","time":"2022-09-19T18:18:42.235+0800","caller":"blog/main.go:72","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-09-19T18:18:42.237+0800","caller":"blog/main.go:81","msg":"Server exiting"}
