@@ -8,7 +8,13 @@ import (
 )
 
 func GetPostListFromCache() (data []*models.PostDetail, err error) {
-	// 查询缓存
+	// 判断缓存是否过期
+	expiration, err := redis.IsCacheExpiration()
+	// 过期
+	if expiration == "" {
+		return nil, err
+	}
+	// 未过期，查询缓存
 	cache, err := redis.GetPostInOrderFromCache()
 	// 缓存命中
 	if len(cache) > 0 {
