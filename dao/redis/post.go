@@ -4,6 +4,11 @@ import (
 	"blog/models"
 	"encoding/json"
 	"github.com/go-redis/redis"
+	"time"
+)
+
+const (
+	oneWeekExpiration = 7 * 24 * time.Hour
 )
 
 func GetPostIDsInOrder(p *models.ParamPostList) ([]string, error) {
@@ -48,6 +53,7 @@ func GetPostInOrderFromCache() (data []string, err error) {
 }
 
 func AddPostCache(data []*models.PostDetail) error {
+	// 存储博客信息的zSet缓存
 	key := getRedisKey(KeyPostCacheZset)
 	postCache := make([]redis.Z, len(data))
 	for i, post := range data {
@@ -65,5 +71,24 @@ func AddPostCache(data []*models.PostDetail) error {
 	if err != nil {
 		return err
 	}
+	// 设置string类型key判断缓存是否过期
+	isTimeoutKey := getRedisKey(KeyPostCacheIsTimeOutString)
+	err = client.Set(isTimeoutKey, "0", oneWeekExpiration).Err()
+	if err != nil {
+		return err
+	}
 	return nil
+}
+
+func IsCacheExpiration() (string, error) {
+	key := getRedisKey(KeyPostCacheIsTimeOutString)
+	result, err := client.Get(key).Result()
+	if err != nil {
+		// 其他错误
+		return "", err
+	} else if err == redis.Nil {
+		// key过期
+		return "", nil
+	}
+	return result, nil
 }
