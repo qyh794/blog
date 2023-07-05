@@ -1,7 +1,7 @@
 package main
 
 import (
-	"blog/dao/mysql"
+	"blog/dao/postgresql"
 	"blog/dao/redis"
 	"blog/logger"
 	"blog/pkg/snowflake"
@@ -29,12 +29,12 @@ func main() {
 		fmt.Println("logger.Init() failed, err:", err)
 		return
 	}
-	// 3.初始化Mysql连接
-	if err := mysql.Init(settings.Conf.MySQLConfig); err != nil {
+	// 3.初始化postgresql连接
+	if err := postgresql.Init(settings.Conf.PostgresqlConfig); err != nil {
 		fmt.Println("logger.Init() failed, err:", err)
 		return
 	}
-	defer mysql.Close()
+	defer postgresql.Close()
 	// 4.初始化redis连接
 	if err := redis.Init(settings.Conf.RedisConfig); err != nil {
 		fmt.Println("redis.Init failed, err:", err)
