@@ -1,7 +1,7 @@
 package controllers
 
 import (
-	"blog/dao/mysql"
+	"blog/dao/postgresql"
 	"blog/logic"
 	"blog/models"
 	"errors"
@@ -25,7 +25,7 @@ func SignUpHandler(c *gin.Context) {
 	}
 	if err := logic.SignUp(p); err != nil {
 		zap.L().Error("logic.SignUp(p) failed", zap.Error(err))
-		if errors.Is(err, mysql.ErrorUserExist) {
+		if errors.Is(err, postgresql.ErrorUserExist) {
 			ResponseError(c, CodeUserExist)
 			return
 		}
@@ -49,7 +49,7 @@ func LoginHandler(c *gin.Context) {
 	token, err := logic.Login(p)
 	if err != nil {
 		zap.L().Error("logic.Login(p) failed, err:", zap.Error(err))
-		if errors.Is(err, mysql.ErrorUserExist) {
+		if errors.Is(err, postgresql.ErrorUserExist) {
 			ResponseError(c, CodeUserNotExist)
 			return
 		}
