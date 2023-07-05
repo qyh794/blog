@@ -2,7 +2,7 @@ package logic
 
 import (
 	"blog/cache"
-	"blog/dao/mysql"
+	"blog/dao/postgresql"
 	"blog/dao/redis"
 	"blog/models"
 	"blog/pkg/snowflake"
@@ -12,7 +12,7 @@ import (
 
 func CreatePost(p *models.Post) (err error) {
 	p.PostID = snowflake.GenID()
-	err = mysql.CreatePost(p)
+	err = postgresql.CreatePost(p)
 	if err != nil {
 		return err
 	}
@@ -26,20 +26,20 @@ func GetPostDetailByID(pID int64) (data *models.PostDetail, err error) {
 	// 帖子的id, title, content, authorid, community_id, create_time
 	// 帖子所属社区的信息
 	// 帖子的作者名字
-	post, err := mysql.GetPostByID(pID)
+	post, err := postgresql.GetPostByID(pID)
 	if err != nil {
-		zap.L().Error("mysql.GetPostByID failed, err:", zap.Error(err))
+		zap.L().Error("postgresql.GetPostByID failed, err:", zap.Error(err))
 		return
 	}
-	user, err := mysql.GetUserByID(post.AuthorID)
+	user, err := postgresql.GetUserByID(post.AuthorID)
 	if err != nil {
-		zap.L().Error("mysql.GetUserByID failed, err:", zap.Int64("authorid:", post.AuthorID), zap.Error(err))
+		zap.L().Error("postgresql.GetUserByID failed, err:", zap.Int64("authorid:", post.AuthorID), zap.Error(err))
 		return
 	}
 
-	community, err := mysql.GetCommunityDetailByID(post.CommunityID)
+	community, err := postgresql.GetCommunityDetailByID(post.CommunityID)
 	if err != nil {
-		zap.L().Error("mysql.GetCommunityDetailByID failed, err:", zap.Error(err))
+		zap.L().Error("postgresql.GetCommunityDetailByID failed, err:", zap.Error(err))
 		return
 	}
 
@@ -52,18 +52,18 @@ func GetPostDetailByID(pID int64) (data *models.PostDetail, err error) {
 }
 
 func GetPostList(page, size int) (data []*models.PostDetail, err error) {
-	posts, err := mysql.GetPostList(page, size)
+	posts, err := postgresql.GetPostList(page, size)
 	data = make([]*models.PostDetail, 0, len(posts))
 	for _, post := range posts {
-		user, err := mysql.GetUserByID(post.AuthorID)
+		user, err := postgresql.GetUserByID(post.AuthorID)
 		if err != nil {
-			zap.L().Error("mysql.GetUserByID failed, err:", zap.Error(err))
+			zap.L().Error("postgresql.GetUserByID failed, err:", zap.Error(err))
 			continue
 		}
 
-		community, err := mysql.GetCommunityDetailByID(post.CommunityID)
+		community, err := postgresql.GetCommunityDetailByID(post.CommunityID)
 		if err != nil {
-			zap.L().Error("mysql.GetCommunityDetailByID failed, err:", zap.Error(err))
+			zap.L().Error("postgresql.GetCommunityDetailByID failed, err:", zap.Error(err))
 			continue
 		}
 
@@ -78,17 +78,17 @@ func GetPostList(page, size int) (data []*models.PostDetail, err error) {
 }
 
 func GetPostListByCommunity(communityId int) (data []*models.PostDetail, err error) {
-	posts, err := mysql.GetPostListByCommunityID(communityId)
+	posts, err := postgresql.GetPostListByCommunityID(communityId)
 	data = make([]*models.PostDetail, 0, len(posts))
 	for _, post := range posts {
-		user, err := mysql.GetUserByID(post.AuthorID)
+		user, err := postgresql.GetUserByID(post.AuthorID)
 		if err != nil {
-			zap.L().Error("mysql.GetUserByID failed, err:", zap.Error(err))
+			zap.L().Error("postgresql.GetUserByID failed, err:", zap.Error(err))
 			continue
 		}
-		community, err := mysql.GetCommunityDetailByID(int64(communityId))
+		community, err := postgresql.GetCommunityDetailByID(int64(communityId))
 		if err != nil {
-			zap.L().Error("mysql.GetCommunityDetailByID failed, err:", zap.Error(err))
+			zap.L().Error("postgresql.GetCommunityDetailByID failed, err:", zap.Error(err))
 			continue
 		}
 		postDetailOne := &models.PostDetail{
@@ -118,7 +118,7 @@ func GetPostListByTimeOrScore(p *models.ParamPostList) (data []*models.PostDetai
 		return
 	}
 	// 得到帖子的id后，从MySQL中获取帖子详细信息
-	posts, err := mysql.GetPostListByIDs(ids)
+	posts, err := postgresql.GetPostListByIDs(ids)
 	if err != nil {
 		return
 	}
@@ -130,17 +130,17 @@ func GetPostListByTimeOrScore(p *models.ParamPostList) (data []*models.PostDetai
 	// 将帖子信息进行组合后返回
 	for i, post := range posts {
 		// 获取作者信息
-		user, err := mysql.GetUserByID(post.AuthorID)
+		user, err := postgresql.GetUserByID(post.AuthorID)
 		if err != nil {
-			zap.L().Error("mysql.GetUserById(post.AuthorID) failed",
+			zap.L().Error("postgresql.GetUserById(post.AuthorID) failed",
 				zap.Int64("author_id", post.AuthorID),
 				zap.Error(err))
 			continue
 		}
 		// 根据社区id查询社区详细信息
-		communityDetail, err := mysql.GetCommunityDetailByID(post.CommunityID)
+		communityDetail, err := postgresql.GetCommunityDetailByID(post.CommunityID)
 		if err != nil {
-			zap.L().Error("mysql.GetCommunityDetailByID(post.CommunityID) failed",
+			zap.L().Error("postgresql.GetCommunityDetailByID(post.CommunityID) failed",
 				zap.Int64("CommunityID", post.CommunityID),
 				zap.Error(err))
 			continue
@@ -166,9 +166,9 @@ func GetPostListByTimeOrScore(p *models.ParamPostList) (data []*models.PostDetai
 
 func DeletePostByID(userID, postIdOfDelete int64) (err error) {
 	// 2.根据要删除的帖子id查询其创建者的id
-	authorId, err := mysql.GetUserIDByPostID(postIdOfDelete)
+	authorId, err := postgresql.GetUserIDByPostID(postIdOfDelete)
 	if err != nil {
-		zap.L().Error("mysql.GetUserIDByPostID failed, err:", zap.Error(err))
+		zap.L().Error("postgresql.GetUserIDByPostID failed, err:", zap.Error(err))
 		return
 	}
 	// 3.判断帖子创建者的id与当前登录的用户id是否相同
@@ -178,9 +178,9 @@ func DeletePostByID(userID, postIdOfDelete int64) (err error) {
 		return errors.New("权限不足")
 	}
 	// 5.相同则进入mysql进行根据帖子id删除帖子
-	err = mysql.DeletePostByID(postIdOfDelete)
+	err = postgresql.DeletePostByID(postIdOfDelete)
 	if err != nil {
-		zap.L().Error("mysql.DeletePostByID failed, err:", zap.Error(err))
+		zap.L().Error("postgresql.DeletePostByID failed, err:", zap.Error(err))
 		return
 	}
 	return
