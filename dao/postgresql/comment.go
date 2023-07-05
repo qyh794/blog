@@ -3,7 +3,8 @@ package postgresql
 import "blog/models"
 
 func CreateComment(comment *models.Comment) (err error) {
-	sqlStr := `insert into 
+	sqlStr := `
+insert into 
     comment(comment_id ,content, post_id, author_id, parent_id) 
 values
     ($1,$2,$3,$4,$5)`
@@ -12,7 +13,8 @@ values
 }
 
 func GetCommentByPostID(postID int) (data []*models.Comment, err error) {
-	sqlStr := `select 
+	sqlStr := `
+select 
     comment_id, content, post_id, author_id, parent_id, create_time 
 from 
     comment 
