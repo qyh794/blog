@@ -1,7 +1,7 @@
 package logic
 
 import (
-	"blog/dao/mysql"
+	"blog/dao/postgresql"
 	"blog/models"
 	"blog/pkg/snowflake"
 	"go.uber.org/zap"
@@ -14,16 +14,16 @@ func CreateComment(comment *models.Comment) (err error) {
 	// 评论id
 	comment.CommentID = snowflake.GenID()
 	// 根据帖子id查找作者id
-	Author, err := mysql.GetUserIDByPostID(comment.PostID)
+	Author, err := postgresql.GetUserIDByPostID(comment.PostID)
 	if err != nil {
 		zap.L().Error("mysql.GetUserIDByPostID failed, err:", zap.Error(err))
 		return
 	}
 	comment.AuthorID = Author.AuthorID
-	err = mysql.CreateComment(comment)
+	err = postgresql.CreateComment(comment)
 	return
 }
 
 func GetCommentByPostID(postID int) (data []*models.Comment, err error) {
-	return mysql.GetCommentByPostID(postID)
+	return postgresql.GetCommentByPostID(postID)
 }
