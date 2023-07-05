@@ -13,12 +13,13 @@ const secret = "abc.com"
 // UserIsExist 判断用户是否存在
 func UserIsExist(username string) (err error) {
 	// 查表
-	sqlStr := `SELECT 
+	sqlStr := `
+SELECT 
     "user_id" 
 FROM 
-    "user" 
+    "user"
 WHERE 
-    "username" = $1`
+    username = $1`
 	var userID int64
 	if err := db.Get(&userID, sqlStr, username); err != nil {
 		if err == sql.ErrNoRows {
@@ -35,7 +36,8 @@ WHERE
 // InsertUser 插入用户
 func InsertUser(user *models.User) (err error) {
 	user.Password = encryptPassword(user.Password)
-	sqlStr := `insert into
+	sqlStr := `
+insert into
     "user" (user_id, username, password) 
 values 
     ($1,$2,$3)`
@@ -46,7 +48,8 @@ values
 // GetUserByID 通过id获取用户信息
 func GetUserByID(userID int64) (user *models.User, err error) {
 	user = new(models.User)
-	sqlStr := `select 
+	sqlStr := `
+select 
     "username" 
 from 
     "user" 
@@ -59,7 +62,8 @@ where
 // Login 用户登录
 func Login(user *models.User) (err error) {
 	oPassword := user.Password
-	sqlStr := `select 
+	sqlStr := `
+select 
     "user_id", "username", "password" 
 from 
     "user"
