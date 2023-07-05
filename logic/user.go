@@ -1,28 +1,29 @@
 package logic
 
 import (
-	"blog/dao/mysql"
+	"blog/dao/postgresql"
 	"blog/models"
 	"blog/pkg/jwt"
 	"blog/pkg/snowflake"
+	"go.uber.org/zap"
 )
 
 func SignUp(p *models.ParamSignUp) (err error) {
 	// 判断用户是否已存在
-	if err := mysql.UserIsExist(p.Username); err != nil {
+	if err := postgresql.UserIsExist(p.Username); err != nil {
+		zap.L().Error("logic.postgresql.UserIsExist error!!!!!!!!!!!!")
 		return err
 	}
 	// 如果存在返回错误
 	// 不存在则在mysql创建一个用户
 	userID := snowflake.GenID()
 	user := &models.User{
-		UserID: userID,
+		UserID:   userID,
 		Username: p.Username,
 		Password: p.Password,
 	}
 
-	
-	return mysql.InsertUser(user)
+	return postgresql.InsertUser(user)
 }
 
 func Login(p *models.ParamLogin) (token string, err error) {
@@ -32,7 +33,7 @@ func Login(p *models.ParamLogin) (token string, err error) {
 		Password: p.Password,
 	}
 	// 将user示例传入mysql进行查询
-	if err := mysql.Login(user); err != nil {
+	if err := postgresql.Login(user); err != nil {
 		return "", err
 	}
 	// 查询成功需要返回的东西：1.token
