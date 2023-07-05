@@ -9,7 +9,8 @@ import (
 
 func CommunityList() (communityList []*models.Community, err error) {
 
-	sqlStr := `select 
+	sqlStr := `
+select 
     community_id, community_name 
 from 
    "community"`
@@ -25,7 +26,8 @@ from
 
 func GetCommunityDetailByID(id int64) (data models.CommunityDetail, err error) {
 
-	sqlStr := `select 
+	sqlStr := `
+select 
     community_id, community_name, introduction, create_time 
 from 
     "community" 
